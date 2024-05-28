@@ -1,0 +1,55 @@
+:root{
+	--primary-color:#032541;
+	--secondary-color: #373b69;
+	--ter-color: #ffa500;
+	--color-white: #fff;
+	--color-dark: #000;
+	
+}
+
+body{
+	background-color:var(--secondary-color);
+	color: var(--color-white);
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+.tabHeading{
+	list-style: none;
+	display:flex;
+	border: 1px solid #fff;
+    margin: 0;
+	
+
+	
+}
+.tabHeading li{
+	flex-grow: 1;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: 20px 0;
+	font-weight: 700;
+	transition: all .4s ease-in-out;
+}
+
+.tabHeading li.active,
+.tabHeading li:hover,
+.tabHeading li:focus,
+.tabHeading li:active{
+	background-color: var(--color-white);
+	color: var(--secondary-color);
+	
+}
+
+.tabPanel{
+	padding: 10px;
+	border: 1px solid #fff;
+}
+.tabContent{
+	display: none;
+}
+.tabContent.active{
+	display: block;
+}
